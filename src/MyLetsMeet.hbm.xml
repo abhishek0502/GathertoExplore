@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 8, 2017 1:04:00 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="user89.pojo.MyLetsMeet" table="MyLetsMeet">
+        <id name="mmeetid" type="java.lang.String">
+            <column name="mmeetid" />
+            <generator class="assigned" />
+        </id>
+        <property name="mname" type="java.lang.String">
+            <column name="mname" />
+        </property>
+        <property name="mlocationcity" type="java.lang.String">
+            <column name="mlocationcity" />
+        </property>
+        <property name="mlocationaddress" type="java.lang.String">
+            <column name="mlocationaddress" />
+        </property>
+        <property name="mcategory" type="java.lang.String">
+            <column name="mcategory" />
+        </property>
+         <property name="mdescription" type="java.lang.String">
+            <column name="mdescription" />
+        </property>
+         <property name="mstartdate" type="java.lang.String">
+            <column name="mstartdate" />
+        </property>
+         <property name="mstarttime" type="java.lang.String">
+            <column name="mstarttime" />
+        </property>
+         <property name="menddate" type="java.lang.String">
+            <column name="menddate" />
+        </property>
+         <property name="mendtime" type="java.lang.String">
+            <column name="mendtime" />
+        </property>
+         <property name="name" type="java.lang.String">
+            <column name="name" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 4 Jun, 2017 10:38:46 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="user89.pojo.EventRequest" table="EventRequest">
+        <id name="requestid" type="java.lang.String">
+            <column name="requestid" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="java.lang.String">
+            <column name="name" />
+        </property>
+     
+        <property name="meetid" type="java.lang.String">
+            <column name="meetid" />
+        </property>
+        <property name="userapproved" type="java.lang.String">
+            <column name="userapproved" />
+        </property>
+        <property name="userconfirm" type="java.lang.String">
+            <column name="userconfirm" />
+        </property>
+    
+      </class>
+</hibernate-mapping>

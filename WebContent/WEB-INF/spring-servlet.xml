@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+
+	<bean id="viewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/"></property>
+		<property name="suffix" value=".jsp"></property>
+	</bean>
+	
+	<bean name="/userregister.ar" class="user89.controller.UserRegisterController"></bean>
+	<bean name="/userlogin.ar" class="user89.controller.UserLoginController"></bean>
+	<bean name="/myletsmeet.ar" class="user89.controller.MyLetsMeetController"></bean>
+	<bean name="/myletsmeetupdate.ar" class="user89.controller.MyLetsMeetUpdateController"></bean>
+	<bean name="/myletsmeetsearchc.ar" class="user89.controller.MyLetsMeetSearchcController"></bean>
+     <bean name="/myletsmeetsearchl.ar" class="user89.controller.MyLetsMeetSearchlController"></bean>
+      <bean name="/ShowMyLetsMeet.ar" class="user89.controller.MyLetsMeetMyEventsController"></bean>
+      <bean name="/forgetpassword.ar" class="user89.controller.ForgerPasswordController"></bean>
+      <bean name="/newpassword.ar" class="user89.controller.NewPasswordController"></bean>
+      <bean name="/signout.ar" class="user89.controller.SignOutController"></bean>
+      <bean name="/sendrequest.ar" class="user89.controller.SendRequestController"></bean>
+      <bean name="/sentrequests.ar" class="user89.controller.SentRequestController"></bean>
+      <bean name="/recievedrequests.ar" class="user89.controller.RecievedRequestController"></bean>
+      <bean name="/allrrview.ar" class="user89.controller.AllRRViewController"></bean>
+      <bean name="/approverequest.ar" class="user89.controller.ApproveRequestController"></bean>
+           <bean name="/confirmrequest.ar" class="user89.controller.ConfirmRequestController"></bean>
+           <bean name="/getuserdetails.ar" class="user89.controller.GetUserDetailsController"></bean>
+           <bean name="/deleterequest.ar" class="user89.controller.DeleteRequestController"></bean>
+           <bean name="/updateprofile.ar" class="user89.controller.UpdateProfileController"></bean>
+           <bean name="/getusernotifications.ar" class="user89.controller.UserNotificationsController"></bean>
+<!--           <bean name="/myletsmeetsearchd.ar" class="user89.controller.MyLetsMeetSearchdController"></bean> -->
+          
+      
+      
+      
+</beans>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 4 Jun, 2017 10:38:46 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="user89.pojo.Notifications" table="Notifications">
+        <id name="nid" type="java.lang.String">
+            <column name="nid" />
+            <generator class="assigned" />
+        </id>
+        <property name="nameto" type="java.lang.String">
+            <column name="nameto" />
+        </property>
+     
+        <property name="namefrom" type="java.lang.String">
+            <column name="namefrom" />
+        </property>
+        <property name="message" type="java.lang.String">
+            <column name="message" />
+        </property>
+          <property name="status" type="java.lang.String">
+            <column name="status" />
+        </property>
+      </class>
+</hibernate-mapping>
